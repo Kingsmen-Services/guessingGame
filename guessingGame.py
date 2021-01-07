@@ -35,6 +35,7 @@ while G != r:
         elif R == "yes":
             print("This is why computers will take over the world!")
             break
+            #Send out conditional taunts to direct and mock the user
     if tries == done:
         if G == r:
             print("I would congratulate you, but even a broken clock is right twice a day.")
@@ -42,3 +43,4 @@ while G != r:
         else:
             print("This is why computers will take over the world")
             exit()
+            #Kicks you out if guessing exceeds max number of tries

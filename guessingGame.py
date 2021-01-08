@@ -3,8 +3,9 @@ tries = 1
 r = random.randint
 surrender = 4
 done = 7
-D = str(input("Select difficulty mortal. [easy/med/hard]"))
-#Sets Variable for max tries 'done' offering 'surrender' the random number and how many tries your on 'tries'
+userName = str(input("What shall I call you carbon based life form?"))
+D = str(input("Select difficulty" userName, "[easy/med/hard]"))
+# Sets Variable for max tries 'done' offering 'surrender' the random number and how many tries your on 'tries'
 if D == "easy":
     r = random.randint(1, 100)
     print("Figures. Choose a number between 1 and 100")
@@ -15,7 +16,7 @@ if D == "hard":
     r = random.randint(1, 1000000)
     print("Someone has a death wish. Choose a number between 1 and 1,000,000")
 G = int(input(""))
-#Allows user to set difficult and mocks them appropriately
+# Allows user to set difficult and mocks them appropriately
 while G != r:
     if G > r:
         print("Has aiming high ever worked for you.... really?")
@@ -25,7 +26,7 @@ while G != r:
         print("Maybe you should have higher aspirations in life.")
         G = int(input("Try again....."))
         tries = tries + 1
-        #Lets user know to guess higher or lower and adds to the 'tries' with every incorrect guess
+        # Lets user know to guess higher or lower and adds to the 'tries' with every incorrect guess
     if tries == surrender:
         R = str(input("Are you ready to admit my superior intellect?"))
         if R == "no":
@@ -33,7 +34,7 @@ while G != r:
         elif R == "yes":
             print("This is why computers will take over the world!")
             break
-            #Allows user to surrender after 4 guesses
+            # Allows user to surrender after 4 guesses
     if tries == done:
         if G == r:
             print("I would congratulate you, but even a broken clock is right twice a day.")
@@ -41,4 +42,4 @@ while G != r:
         else:
             print("This is why computers will take over the world")
             exit()
-            #This section deal with the end of the game, either you win and it mocks you, you lose and it mocks you
+            # This section deal with the end of the game, either you win and it mocks you, you lose and it mocks you

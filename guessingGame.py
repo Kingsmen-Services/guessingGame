@@ -15,7 +15,7 @@ if D == "hard":
     r = random.randint(1, 1000000)
     print("Someone has a death wish. Choose a number between 1 and 1,000,000")
 G = int(input(""))
-#Allows user to set difficult and mocks them appropriatly
+#Allows user to set difficult and mocks them appropriately
 while G != r:
     if G > r:
         print("Has aiming high ever worked for you.... really?")

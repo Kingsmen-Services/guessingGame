@@ -3,7 +3,8 @@ tries = 1
 r = random.randint
 surrender = 4
 done = 7
-D = str(input("Select difficulty mortal. [easy/med/hard]"))
+userName = str(input("What shall I call you carbon based life form?"))
+D = str(input("Select difficulty" userName, "[easy/med/hard]"))
 # Sets Variable for max tries 'done' offering 'surrender' the random number and how many tries your on 'tries'
 if D == "easy":
     r = random.randint(1, 100)

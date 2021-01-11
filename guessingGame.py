@@ -3,6 +3,9 @@ tries = 1
 r = random.randint
 surrender = 4
 done = 7
+
+# I'll put a code for music to be playing in the backround of the game here
+
 D = str(input("Select difficulty mortal. [easy/med/hard]"))
 # Sets Variable for max tries 'done' offering 'surrender' the random number and how many tries your on 'tries'
 if D == "easy":
